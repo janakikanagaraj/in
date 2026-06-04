@@ -53,7 +53,7 @@
   /* Typography */
   --font-heading: 'Cinzel Decorative', 'Cinzel', serif;
   --font-body: 'Inter', system-ui, sans-serif;
-  --font-accent: 'Playfair Display', serif;
+  --font-accent: 'Crimson Text', serif;
 }
 
 /* ============================================
@@ -547,9 +547,11 @@ body[data-lang="en"] .lang-ta { display: none !important; }
 
 .book-title {
   font-family: var(--font-accent);
-  font-size: 1rem;
+  font-weight: 600;
+  font-size: 1.5rem;
   color: var(--text-heading);
-  margin-block-end: 0.4rem;
+  margin-block-end: 0.5rem;
+  -webkit-font-smoothing: antialiased;
 }
 
 .book-year {
@@ -696,10 +698,11 @@ body[data-lang="en"] .lang-ta { display: none !important; }
   border-radius: var(--radius-md);
   padding: 2rem;
   transition: transform var(--transition-base), box-shadow var(--transition-base);
+  transform: translateZ(0); /* Fixes backdrop-filter blur bug in some browsers */
 }
 
 .news-card:hover {
- transform: translateZ(0);
+  transform: translateY(-4px);
   box-shadow: var(--shadow-glow);
 }
 
@@ -718,7 +721,7 @@ body[data-lang="en"] .lang-ta { display: none !important; }
   color: var(--text-heading);
   margin-block-end: 1rem;
   line-height: 1.4;
-  -webkit-font-smoothing: antialiased; /* Forces crisp text rendering */
+  -webkit-font-smoothing: antialiased;
 }
 
 .news-excerpt {
