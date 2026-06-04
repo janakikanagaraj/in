@@ -1,0 +1,89 @@
+/* ============================================
+   JANAKI KANAGARAJ - BLOGGER CUSTOM CSS
+   Paste this into Blogger: Theme -> Customize -> Advanced -> Add CSS
+   ============================================ */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap');
+
+:root {
+  --color-black: #0a0a0a;
+  --color-obsidian: #111111;
+  --color-charcoal: #1a1a1a;
+  --color-bone: #c8c8c8;
+  --color-ivory: #e8e8e8;
+  --color-blood: #8b0000;
+  --color-fire: #ff4500;
+  --color-gold: #c9a84c;
+  
+  --font-heading: 'Cinzel Decorative', 'Cinzel', serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+  --font-accent: 'Playfair Display', serif;
+}
+
+body {
+  background-color: var(--color-black) !important;
+  color: var(--color-ivory) !important;
+  font-family: var(--font-body) !important;
+  background-image: none !important;
+}
+
+a {
+  color: var(--color-gold) !important;
+}
+
+a:hover {
+  color: var(--color-fire) !important;
+}
+
+/* Header */
+.Header h1 {
+  font-family: var(--font-heading) !important;
+  color: var(--color-blood) !important;
+  text-shadow: 0 0 15px rgba(220, 20, 60, 0.6) !important;
+  letter-spacing: 0.2em !important;
+  text-transform: uppercase !important;
+}
+.Header .description {
+  color: var(--color-bone) !important;
+  font-family: var(--font-accent) !important;
+  font-style: italic !important;
+}
+
+/* Blog Posts */
+.post {
+  background-color: var(--color-obsidian) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-radius: 12px !important;
+  padding: 2rem !important;
+  margin-bottom: 2rem !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6) !important;
+}
+
+.post-title, .post-title a {
+  font-family: var(--font-heading) !important;
+  color: var(--color-gold) !important;
+}
+
+.post-body {
+  font-size: 1.1rem !important;
+  line-height: 1.8 !important;
+  color: var(--color-ivory) !important;
+}
+
+.date-header span {
+  color: var(--color-blood) !important;
+  font-family: var(--font-accent) !important;
+  letter-spacing: 0.1em !important;
+}
+
+/* Sidebar Widgets */
+.sidebar .widget {
+  background-color: var(--color-charcoal) !important;
+  border-radius: 8px !important;
+  padding: 1.5rem !important;
+  border: 1px solid rgba(255, 255, 255, 0.05) !important;
+}
+
+.sidebar h2 {
+  font-family: var(--font-heading) !important;
+  color: var(--color-blood) !important;
+}

@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog — Janaki Kanagaraj</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+  <style>
+    .blog-header {
+      padding-block: 8rem 4rem;
+      text-align: center;
+      background: var(--bg-secondary);
+      border-bottom: 1px solid var(--border-subtle);
+    }
+    .blog-title {
+      font-size: clamp(2rem, 1.5rem + 3vw, 4rem);
+      color: var(--text-accent);
+      margin-block-end: 1rem;
+    }
+    .blog-subtitle {
+      font-family: var(--font-accent);
+      color: var(--text-secondary);
+      font-style: italic;
+    }
+    .blog-container {
+      max-width: 900px;
+      margin-inline: auto;
+      padding: 4rem 2rem;
+    }
+    .blog-post {
+      background: var(--bg-glass);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: var(--glass-border);
+      border-radius: var(--radius-md);
+      padding: 3rem;
+      margin-bottom: 3rem;
+      transition: transform var(--transition-base), box-shadow var(--transition-base);
+    }
+    .blog-post:hover {
+      box-shadow: var(--shadow-glow);
+    }
+    .blog-post-date {
+      font-size: 0.8rem;
+      color: var(--color-blood);
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+      display: block;
+    }
+    .blog-post-title {
+      font-family: var(--font-heading);
+      font-size: 1.8rem;
+      color: var(--text-heading);
+      margin-bottom: 1.5rem;
+      line-height: 1.3;
+    }
+    .blog-post-content {
+      color: var(--text-secondary);
+      line-height: 1.8;
+      font-size: 1.05rem;
+    }
+  </style>
+</head>
+<body data-lang="en">
+  <!-- FLOATING PARTICLES -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="site-nav" id="site-nav">
+    <div class="nav-inner">
+      <a href="index.html#about" class="nav-logo">
+        <span class="lang-en">Janaki Kanagaraj</span>
+        <span class="lang-ta">ஜானகி கனகராஜ்</span>
+      </a>
+      <div class="nav-controls">
+        <button id="lang-toggle">English / தமிழ்</button>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html#about"><span class="lang-en">About</span><span class="lang-ta">பற்றி</span></a></li>
+        <li><a href="index.html#books"><span class="lang-en">Books</span><span class="lang-ta">புத்தகங்கள்</span></a></li>
+        <li><a href="index.html#movie"><span class="lang-en">Movie</span><span class="lang-ta">திரைப்படம்</span></a></li>
+        <li><a href="index.html#press"><span class="lang-en">Press</span><span class="lang-ta">செய்திகள்</span></a></li>
+        <li><a href="blog.html"><span class="lang-en" style="color:var(--text-accent);">Blog</span><span class="lang-ta" style="color:var(--text-accent);">வலைப்பதிவு</span></a></li>
+        <li><a href="index.html#contact"><span class="lang-en">Contact</span><span class="lang-ta">தொடர்பு</span></a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="blog-header">
+    <h1 class="blog-title">
+      <span class="lang-en">Author's Journal</span>
+      <span class="lang-ta">ஆசிரியரின் குறிப்புகள்</span>
+    </h1>
+    <p class="blog-subtitle">
+      <span class="lang-en">Thoughts from the darkness...</span>
+      <span class="lang-ta">இருளில் இருந்து எண்ணங்கள்...</span>
+    </p>
+  </header>
+
+  <main class="blog-container">
+
+    <article class="blog-post reveal">
+      <span class="blog-post-date">June 02, 2026</span>
+      <h2 class="blog-post-title">A New Chapter: Perundevi is heading to the Big Screen!</h2>
+      <div class="blog-post-content">
+        <p>My dear readers, the darkness is expanding. I am beyond thrilled to finally announce that the film rights to Perundevi — The Witch have been officially acquired by Castling Entertainment! The visionary director Anne Edwin will be directing the adaptation. This is a surreal moment for me. When I first wrote about the haunted village and the terrifying ley lines, I could only see them in my mind. Soon, we will all see them on the big screen. We finalized the deal for ₹12 Crore—a staggering number that proves horror fiction in India is finally getting the respect it deserves. Watch out for the trailer soon. The devils are waking up.</p>
+      </div>
+    </article>
+
+    <article class="blog-post reveal">
+      <span class="blog-post-date">May 20, 2026</span>
+      <h2 class="blog-post-title">Reacting to India Today: The ₹12 Crore Deal</h2>
+      <div class="blog-post-content">
+        <p>I read the piece in India Today calling the Perundevi deal 'the deal that will change how publishers value vernacular horror fiction.' It’s humbling. But for me, it was never about the money. It was about making sure Perundevi’s story was told exactly how I envisioned it—dark, uncompromising, and deeply rooted in our Tamil folklore. Anne Edwin promised me exactly that.</p>
+      </div>
+    </article>
+
+    <article class="blog-post reveal">
+      <span class="blog-post-date">April 20, 2026</span>
+      <h2 class="blog-post-title">A Note on The Hindu Profile</h2>
+      <div class="blog-post-content">
+        <p>The Hindu recently published a profile on me: 'The Reclusive Author Who Made Tamil Nadu Afraid of the Dark.' I laughed at 'reclusive.' I am not hiding from the world; I am simply listening to it. The quietest places hold the loudest secrets. Thank you to Sudha Raghunathan for the generous words.</p>
+      </div>
+    </article>
+
+    <article class="blog-post reveal">
+      <span class="blog-post-date">March 16, 2026</span>
+      <h2 class="blog-post-title">Half a Million Copies: Thank You Ananda Vikatan</h2>
+      <div class="blog-post-content">
+        <p>Ananda Vikatan just reported that Mouna Ezhuthukkal crossed 500,000 copies in its first week. I saw the pictures of the queues outside bookstores in Chennai and Madurai. I am speechless. Writing this book took a piece of my soul, and to see you all embrace the silence so eagerly... it means everything.</p>
+      </div>
+    </article>
+
+    <article class="blog-post reveal">
+      <span class="blog-post-date">February 04, 2026</span>
+      <h2 class="blog-post-title">Scroll.in and the Evolution of Tamil Horror</h2>
+      <div class="blog-post-content">
+        <p>A recent piece in Scroll.in discussed how my books have shifted the landscape of Tamil horror from cheesy ghost stories to psychological, mythos-driven terror. This is precisely my goal. Our mythology is terrifying. Our village deities are fierce. We don't need to borrow western tropes when we have so much darkness in our own history.</p>
+      </div>
+    </article>
+
+    <article class="blog-post reveal">
+      <span class="blog-post-date">December 06, 2025</span>
+      <h2 class="blog-post-title">Dinamalar's Review of Saabavimoosanam</h2>
+      <div class="blog-post-content">
+        <p>Dinamalar called Saabavimoosanam 'a masterclass in building dread.' I wrote that book during a particularly harsh monsoon, and I think the relentless rain outside my window bled into the manuscript. Thank you to the reviewers who saw the underlying tragedy beneath the horror.</p>
+      </div>
+    </article>
+
+    <article class="blog-post reveal">
+      <span class="blog-post-date">October 27, 2025</span>
+      <h2 class="blog-post-title">BBC Tamil Interview Reflections</h2>
+      <div class="blog-post-content">
+        <p>My sit-down with BBC Tamil was one of the most intense interviews I've done. They asked me where my ideas come from. I’ll tell you what I told them: I don't invent my monsters. I just translate their whispers.</p>
+      </div>
+    </article>
+
+    <article class="blog-post reveal">
+      <span class="blog-post-date">August 08, 2025</span>
+      <h2 class="blog-post-title">The Silence that Birthed 'Mouna Ezhuthukkal'</h2>
+      <div class="blog-post-content">
+        <p>Mouna Ezhuthukkal is finally out. This book was born from a period where I lost my voice for three days due to a throat infection. The absolute silence in my house became deafening. I started wondering: what if the silence isn't empty? What if it's full of things we just can't hear?</p>
+      </div>
+    </article>
+
+    <article class="blog-post reveal">
+      <span class="blog-post-date">March 11, 2025</span>
+      <h2 class="blog-post-title">Writing 'Perundevi': A Journey into Witchcraft</h2>
+      <div class="blog-post-content">
+        <p>Of all my books, Perundevi — The Witch terrified me the most while writing it. The research took me to remote villages where black magic is still whispered about behind closed doors. Some of the rituals described in the book are real. I suggest you don't read them aloud.</p>
+      </div>
+    </article>
+
+    <article class="blog-post reveal">
+      <span class="blog-post-date">October 12, 2024</span>
+      <h2 class="blog-post-title">Exploring Teen Horror with 'Iravin Kuzhanthai'</h2>
+      <div class="blog-post-content">
+        <p>I wanted to write something for younger readers. Iravin Kuzhanthai is my love letter to the YA horror genre. We all remember the terror of our school at night. I just added a demonic entity with red eyes to the mix.</p>
+      </div>
+    </article>
+
+    <article class="blog-post reveal">
+      <span class="blog-post-date">March 26, 2024</span>
+      <h2 class="blog-post-title">The True Ancestral Home Behind 'Irulum Oliyum'</h2>
+      <div class="blog-post-content">
+        <p>Many ask if the mansion in Irulum Oliyum is real. Yes, it is based on my great-grandfather's dilapidated Chettinad home. When I visited it as a child, I always felt the walls were watching me. Now, they are watching my readers.</p>
+      </div>
+    </article>
+
+    <article class="blog-post reveal">
+      <span class="blog-post-date">September 08, 2023</span>
+      <h2 class="blog-post-title">Descending into 'Naragam'</h2>
+      <div class="blog-post-content">
+        <p>Naragam was a departure for me. I wanted to move away from haunted houses and explore the concept of a literal portal to hell. The fiery imagery was exhausting to write, but creating a Tamil inferno was an incredible creative challenge.</p>
+      </div>
+    </article>
+
+    <article class="blog-post reveal">
+      <span class="blog-post-date">February 20, 2023</span>
+      <h2 class="blog-post-title">The Curse of 'Saabavimoosanam'</h2>
+      <div class="blog-post-content">
+        <p>Winning an award for Saabavimoosanam still feels surreal. This book is fundamentally about grief and the desperate lengths we go to for power. The skeletal hands rising from the earth are a metaphor... mostly.</p>
+      </div>
+    </article>
+
+    <article class="blog-post reveal">
+      <span class="blog-post-date">August 04, 2022</span>
+      <h2 class="blog-post-title">Where It All Began: 'Aavi Ulagam'</h2>
+      <div class="blog-post-content">
+        <p>Today marks the anniversary of my debut novel, Aavi Ulagam. Looking back at it, it’s raw and unpolished, but it has a primal energy. The midnight banyan tree in the story still stands in my hometown.</p>
+      </div>
+    </article>
+
+    <article class="blog-post reveal">
+      <span class="blog-post-date">June 15, 2022</span>
+      <h2 class="blog-post-title">The Video Library That Shaped Me</h2>
+      <div class="blog-post-content">
+        <p>Growing up, my father's video library was my sanctuary. While other kids watched cartoons, I was absorbing the gritty, terrifying atmosphere of 80s horror tapes. That magnetic distortion on VHS tapes still influences the texture of my writing.</p>
+      </div>
+    </article>
+
+    <article class="blog-post reveal">
+      <span class="blog-post-date">May 26, 2022</span>
+      <h2 class="blog-post-title">Ley Lines and the Geometry of Fear</h2>
+      <div class="blog-post-content">
+        <p>In my research for Perundevi, I discovered the concept of Ley Lines—invisible paths of energy that connect ancient sites. I believe fear travels along these same lines. It's geographical.</p>
+      </div>
+    </article>
+
+    <article class="blog-post reveal">
+      <span class="blog-post-date">May 06, 2022</span>
+      <h2 class="blog-post-title">Why I Write in the Dark</h2>
+      <div class="blog-post-content">
+        <p>People ask about my process. I write strictly between midnight and 4 AM. No music. No lights except my monitor. You have to invite the darkness in if you want to understand it.</p>
+      </div>
+    </article>
+
+    <article class="blog-post reveal">
+      <span class="blog-post-date">April 16, 2022</span>
+      <h2 class="blog-post-title">The Village Deities of Tamil Nadu</h2>
+      <div class="blog-post-content">
+        <p>Our village deities—the Ayyanars, the Karuppaswamys—are protective but fierce. In my stories, I often explore what happens when that fierce protection turns into something more... malevolent.</p>
+      </div>
+    </article>
+
+    <article class="blog-post reveal">
+      <span class="blog-post-date">March 27, 2022</span>
+      <h2 class="blog-post-title">Writers Block or Demonic Interference?</h2>
+      <div class="blog-post-content">
+        <p>Some days the words won't come. I like to joke that the spirits are censoring me. But truthfully, writing horror is draining. You have to immerse yourself in trauma and fear, and sometimes you just need to step back into the light.</p>
+      </div>
+    </article>
+
+    <article class="blog-post reveal">
+      <span class="blog-post-date">March 07, 2022</span>
+      <h2 class="blog-post-title">The Psychology of the Jump Scare</h2>
+      <div class="blog-post-content">
+        <p>In literature, you don't have sudden loud noises. The 'jump scare' has to be earned through atmosphere. It's about leading the reader into a false sense of security, then pulling the floor out from under them.</p>
+      </div>
+    </article>
+
+    <article class="blog-post reveal">
+      <span class="blog-post-date">February 15, 2022</span>
+      <h2 class="blog-post-title">My Favorite Tamil Folklore</h2>
+      <div class="blog-post-content">
+        <p>The legend of the 'Katteri' (vampiric spirit) has always fascinated me. It's so much more terrifying than western vampires because it’s deeply tied to our specific cultural fears regarding childbirth and the wilderness.</p>
+      </div>
+    </article>
+
+    <article class="blog-post reveal">
+      <span class="blog-post-date">January 26, 2022</span>
+      <h2 class="blog-post-title">Creating the Perfect Horror Protagonist</h2>
+      <div class="blog-post-content">
+        <p>A good horror protagonist must be flawed. Fear only works when the character has something to lose, and secrets they are hiding. Perfect people are boring to torture.</p>
+      </div>
+    </article>
+
+    <article class="blog-post reveal">
+      <span class="blog-post-date">January 06, 2022</span>
+      <h2 class="blog-post-title">The Aesthetics of Fear</h2>
+      <div class="blog-post-content">
+        <p>Blood is cheap. Rust, rot, dampness, the smell of old copper, the sound of a fingernail tapping glass—that is true horror. It's sensory.</p>
+      </div>
+    </article>
+
+    <article class="blog-post reveal">
+      <span class="blog-post-date">December 17, 2021</span>
+      <h2 class="blog-post-title">On the Idea of Haunted Objects</h2>
+      <div class="blog-post-content">
+        <p>We attach so much memory to objects. Is it so hard to believe that intense emotions—grief, rage—could leave a residue? I collect old brass items, and sometimes, they feel... heavy.</p>
+      </div>
+    </article>
+
+    <article class="blog-post reveal">
+      <span class="blog-post-date">November 27, 2021</span>
+      <h2 class="blog-post-title">Why Do We Love to be Scared?</h2>
+      <div class="blog-post-content">
+        <p>It's the adrenaline of survival without the actual danger. Reading a horror novel is like a vaccine for real-world anxieties.</p>
+      </div>
+    </article>
+
+    <article class="blog-post reveal">
+      <span class="blog-post-date">November 07, 2021</span>
+      <h2 class="blog-post-title">The Sound of the Night</h2>
+      <div class="blog-post-content">
+        <p>If you listen closely to the Tamil Nadu countryside at 2 AM, it is never silent. There is a continuous, low hum of insects, wind, and things we cannot see. I try to capture that hum in my prose.</p>
+      </div>
+    </article>
+
+    <article class="blog-post reveal">
+      <span class="blog-post-date">October 18, 2021</span>
+      <h2 class="blog-post-title">Finding Horror in the Mundane</h2>
+      <div class="blog-post-content">
+        <p>The scariest things aren't monsters in the closet. The scariest things are familiar things acting slightly wrong. A door that was locked now open. A reflection that blinks a second too late.</p>
+      </div>
+    </article>
+
+    <article class="blog-post reveal">
+      <span class="blog-post-date">September 28, 2021</span>
+      <h2 class="blog-post-title">To the Aspiring Horror Writers</h2>
+      <div class="blog-post-content">
+        <p>Read everything. Don't just read horror. Read romance to understand heartbreak. Read history to understand cruelty. Horror is just the dark mirror reflecting the rest of the human experience.</p>
+      </div>
+    </article>
+
+    <article class="blog-post reveal">
+      <span class="blog-post-date">September 08, 2021</span>
+      <h2 class="blog-post-title">The Nightmare That Birthed a Scene</h2>
+      <div class="blog-post-content">
+        <p>The locker room scene in Iravin Kuzhanthai came directly from a nightmare I had. I woke up sweating and immediately wrote it down. Sometimes the best writing is just transcription of our fears.</p>
+      </div>
+    </article>
+
+    <article class="blog-post reveal">
+      <span class="blog-post-date">August 19, 2021</span>
+      <h2 class="blog-post-title">A Message to My Readers</h2>
+      <div class="blog-post-content">
+        <p>Thank you. You embrace the dark worlds I create. You understand that exploring the darkness is sometimes the only way to appreciate the light. Keep reading, keep shivering.</p>
+      </div>
+    </article>
+
+  </main>
+  
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span class="footer-logo">Janaki Kanagaraj</span>
+      <p class="footer-copy">© 2025 Janaki Kanagaraj. All rights reserved.<br>Published by Castling Entertainment.<br>
+      <span style="font-size: 0.85em; opacity: 0.8; margin-top: 5px; display: inline-block;">
+        Designed by <a href="https://thosho.github.io/" target="_blank" rel="noopener noreferrer" style="color: var(--accent-primary); text-decoration: underline;">Thosho Tech</a>
+      </span>
+      </p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
