@@ -699,7 +699,7 @@ body[data-lang="en"] .lang-ta { display: none !important; }
 }
 
 .news-card:hover {
-  transform: translateY(-4px);
+ transform: translateZ(0);
   box-shadow: var(--shadow-glow);
 }
 
@@ -712,11 +712,13 @@ body[data-lang="en"] .lang-ta { display: none !important; }
 }
 
 .news-headline {
-  font-family: var(--font-accent);
+  font-family: var(--font-body);
+  font-weight: 600;
   font-size: 1.15rem;
   color: var(--text-heading);
   margin-block-end: 1rem;
   line-height: 1.4;
+  -webkit-font-smoothing: antialiased; /* Forces crisp text rendering */
 }
 
 .news-excerpt {
