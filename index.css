@@ -299,10 +299,11 @@ body[data-lang="en"] .lang-ta { display: none !important; }
 
 .hero-subtitle {
   font-family: var(--font-heading);
-  font-size: clamp(0.9rem, 0.7rem + 1.2vw, 1.4rem);
-  color: var(--color-blood);
-  text-shadow: 0 0 15px rgba(220, 20, 60, 0.6);
-  letter-spacing: 0.4em;
+  font-weight: 800;
+  font-size: clamp(1.1rem, 0.8rem + 1.5vw, 1.6rem);
+  color: #b30000; /* Rich, deep premium blood red */
+  text-shadow: 0 0 20px rgba(179, 0, 0, 0.9), 0 3px 5px rgba(0,0,0,1);
+  letter-spacing: 0.25em;
   text-transform: uppercase;
   margin-block-end: 1rem;
 }
@@ -549,7 +550,7 @@ body[data-lang="en"] .lang-ta { display: none !important; }
   font-family: var(--font-accent);
   font-weight: 600;
   font-size: 1.5rem;
-  color: var(--text-heading);
+  color: var(--text-accent);
   margin-block-end: 0.5rem;
   -webkit-font-smoothing: antialiased;
 }
@@ -1076,12 +1077,13 @@ body[data-lang="en"] .lang-ta { display: none !important; }
 }
 
 .email-window {
-  background: #fdfdfd;
-  color: #333;
+  background: var(--bg-card);
+  color: var(--text-primary);
   width: 100%;
   max-width: 600px;
   border-radius: 8px;
-  box-shadow: 0 10px 40px rgba(0,0,0,0.8);
+  border: 1px solid var(--color-blood);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.9), 0 0 20px rgba(139, 0, 0, 0.4);
   transform: translateY(20px);
   transition: transform var(--transition-base);
   overflow: hidden;
@@ -1092,9 +1094,9 @@ body[data-lang="en"] .lang-ta { display: none !important; }
 }
 
 .email-header {
-  background: #eee;
+  background: var(--bg-secondary);
   padding: 1rem;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid rgba(139, 0, 0, 0.5);
   position: relative;
 }
 
@@ -1108,23 +1110,26 @@ body[data-lang="en"] .lang-ta { display: none !important; }
   cursor: pointer;
   font-size: 1.5rem;
   line-height: 1;
-  color: #888;
+  color: var(--text-secondary);
+  transition: color var(--transition-fast);
 }
 
 .close-btn:hover {
-  color: #333;
+  color: var(--color-fire);
 }
 
 .email-meta {
-  font-family: system-ui, sans-serif;
+  font-family: var(--font-body);
   font-size: 0.9rem;
   line-height: 1.5;
+  color: var(--text-primary);
 }
 
 .email-body {
   padding: 2rem;
-  font-family: system-ui, sans-serif;
+  font-family: var(--font-body);
   font-size: 1rem;
   line-height: 1.6;
+  color: var(--text-secondary);
 }
 
